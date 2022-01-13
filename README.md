@@ -1,4 +1,7 @@
-# CI4---CRUD---BAGAS
-import database latihan.sql
-running dengan php spark serve
-install composer jika dibutuhkan
+# Tugas CRUD API
+## Bagas Adi Prakoso
+
+### Contoh Login
+Email : bagasadi@test.com
+
+Password : bagas123
