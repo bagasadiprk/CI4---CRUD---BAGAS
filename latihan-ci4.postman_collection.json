@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "cf883f2a-6c72-416a-96a5-b61f63c0f407",
+		"name": "crud-bagasadi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get biodata",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NDIwODc4MzUsIm5iZiI6MTY0MjA4NzgzNSwiaWQiOiIxIn0.NZEk8p3HygmbA9wVZ3aWMxmMx1IFEoqYXmSI7U4Ars4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/biodata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"biodata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update biodata",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\" : \"Bagas Coba\",\r\n    \"hobi\": \"Gaming\",\r\n    \"alamat\": \"Alamat bagas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/biodata/766767",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"biodata",
+						"766767"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete biodata",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\" : \"Bagas Coba\",\r\n    \"hobi\": \"Gaming\",\r\n    \"alamat\": \"Alamat bagas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/biodata/766767",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"biodata",
+						"766767"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tambah biodata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nik\": \"1234\",\r\n    \"nama\": \"Bagas 2\",\r\n    \"hobi\": \"Gaming\",\r\n    \"alamat\": \"Lamper\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/biodata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"biodata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"bagasadi@test.com\",\r\n    \"password\": \"bagas123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
